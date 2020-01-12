@@ -1,0 +1,136 @@
+.header {
+  position: fixed;
+  top: 0;
+  background-color: #4AB777;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100vw;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__container-main-btn {
+  color: #fff;
+  font-weight: 800;
+  font-size: 20px;
+}
+.header__container-items {
+  width: 50vw;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+.header__container-item {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 15px;
+}
+.header__container-email-item {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 200;
+  margin: 0 15px;
+}
+
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #27925d;
+  padding: 150px 30%;
+  margin-top: 50px;
+}
+.landing__title {
+  text-transform: capitalize;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.landing__paragraph {
+  font-weight: 200;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+}
+
+.features {
+  margin: 0 10%;
+}
+.features__title {
+  font-size: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 30px;
+}
+.features__horizontal-section {
+  display: flex;
+  flex-direction: row;
+  margin: 0 40px;
+}
+.features__vertical-section {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+}
+.features__vertical-section .features__section__icon {
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.features__vertical-section .features__section {
+  text-align: center;
+}
+.features__section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.features__section__icon {
+  font-size: 66px !important;
+  display: flex !important;
+  align-items: center;
+}
+.features__section__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.features__section__paragrah {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #3e3e3e;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.row, .row-fluid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 15%;
+}
+
+.row-fluid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.row-fluid {
+  margin: 0 5%;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,28 @@
+@import "header";
+@import "features";
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 15%;
+}
+
+.row-fluid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.row-fluid {
+  @extend .row;
+  margin: 0 5%;
+}
