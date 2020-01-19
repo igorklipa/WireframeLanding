@@ -1,2 +1,4 @@
 # WebStorm IDE project
 /.idea
+.sass-cache
+.sass-cache/*
