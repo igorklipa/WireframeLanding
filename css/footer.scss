@@ -1,0 +1,35 @@
+@import "global";
+
+.footer {
+  &__connected {
+
+  }
+
+  &__about-section {
+    display: flex;
+    &-item {
+      margin: 40px;
+    }
+  }
+
+  &__paragraph {
+    font-weight: 200;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  &__site-info {
+    display: flex;
+    justify-content: flex-end;
+    background-color: $primaryColor;
+    padding: 10px 20px;
+
+    span {
+      color: #ffffff;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

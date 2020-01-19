@@ -1,0 +1,38 @@
+@import "global";
+
+.license {
+  display: flex;
+  flex-direction: row;
+
+  &__single {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    background-color: $secondaryColor;
+    padding: 50px;
+  }
+
+  &__multiple {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    background-color: $primaryColor;
+    padding: 50px;
+  }
+
+  &__price {
+    color: #ffffff;
+    font-size: 100px;
+    margin: 10px;
+    font-weight: 500;
+  }
+
+  &__note {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 36px;
+    margin: 10px;
+  }
+}

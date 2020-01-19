@@ -1,0 +1,55 @@
+$primaryColor: #4AB777;
+$secondaryColor: #03864A;
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 15%;
+}
+
+.row-fluid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 5%;
+}
+
+.flex-self-end {
+  display: flex;
+  align-self: flex-end;
+}
+
+.title {
+
+  &__black {
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 30px;
+  }
+
+  &__white {
+    @extend .title__black;
+    color: #ffffff;
+  }
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.all-caps {
+  text-transform: uppercase;
+}
