@@ -25,8 +25,8 @@
       flex-flow: row wrap;
       -webkit-flex-flow: row wrap;
       justify-content: flex-end;
-      -webkit-transition: all .4s ease ;
-      transition: all .4s ease ;
+      -webkit-transition: all .4s ease;
+      transition: all .4s ease;
     }
 
     &-item {
@@ -48,6 +48,7 @@
 
     &-menu-checkbox {
       display: none;
+
       &:checked ~ {
         .header__container-items {
           display: block;
@@ -63,6 +64,7 @@
       cursor: pointer;
       padding: 0 4px;
       user-select: none;
+
       * > {
         user-select: none;
       }
@@ -75,7 +77,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(39,146,93);
+  background-color: rgb(39, 146, 93);
   padding: 150px 30%;
   margin-top: 50px;
 

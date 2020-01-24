@@ -4,6 +4,7 @@
 
   &__about-section {
     display: flex;
+
     &-item {
       margin: 40px;
     }
@@ -24,6 +25,7 @@
 
     span {
       color: #ffffff;
+
       a {
         text-decoration: none;
       }
@@ -34,6 +36,7 @@
 @media only screen and (max-width: 530px) {
   .footer__about-section {
     flex-direction: column !important;
+
     div {
       > * {
         text-align: center;
