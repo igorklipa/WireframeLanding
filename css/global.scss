@@ -1,5 +1,6 @@
 $primaryColor: #4AB777;
 $secondaryColor: #03864A;
+$menuHoverColor: #419664;
 
 * {
   font-family: "Open Sans", sans-serif;
@@ -19,8 +20,8 @@ body {
 .row-fluid {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin: 0 5%;
+  justify-content: space-between;
+  margin: 0 15%;
 }
 
 .flex-self-end {
@@ -52,4 +53,13 @@ body {
 
 .all-caps {
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 978px) {
+  .row-fluid {
+    margin: 0 5%;
+  }
+  .row {
+    margin: 0 5%;
+  }
 }

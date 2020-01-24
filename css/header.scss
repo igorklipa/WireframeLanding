@@ -5,42 +5,68 @@
   top: 0;
   background-color: $primaryColor;
   padding: 20px;
+  height: 70px;
   box-sizing: border-box;
   width: 100vw;
 
   &__container {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-  }
+    flex-wrap: wrap;
 
-  &__container-main-btn {
-    color: #fff;
-    font-weight: 800;
-    font-size: 20px;
-  }
+    &-main-btn {
+      color: #fff;
+      font-weight: 800;
+      font-size: 20px;
+    }
 
-  &__container-items {
-    width: 50vw;
-    display: flex;
-    flex-flow: row wrap;
-    -webkit-flex-flow: row wrap;
-    justify-content: flex-end;
-  }
+    &-items {
+      width: 50vw;
+      display: flex;
+      flex-flow: row wrap;
+      -webkit-flex-flow: row wrap;
+      justify-content: flex-end;
+      -webkit-transition: all .4s ease ;
+      transition: all .4s ease ;
+    }
 
-  &__container-item {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 600;
-    margin: 0 15px;
-  }
+    &-item {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0 15px;
+      cursor: pointer;
+    }
 
-  &__container-email-item {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 200;
-    margin: 0 15px;
+    &-email-item {
+      color: #fff;
+      text-transform: initial;
+      font-size: 14px;
+      font-weight: 200;
+      margin: 0 15px;
+    }
+
+    &-menu-checkbox {
+      display: none;
+      &:checked ~ {
+        .header__container-items {
+          display: block;
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+
+    &-menu-btn {
+      display: none;
+      color: #ffffff;
+      cursor: pointer;
+      padding: 0 4px;
+      user-select: none;
+      * > {
+        user-select: none;
+      }
+    }
   }
 }
 
@@ -65,5 +91,34 @@
     color: #fff;
     line-height: 30px;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 978px) {
+  .header__container-menu-btn {
+    display: block;
+  }
+
+  .header__container-items {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: $primaryColor;
+    width: 100vw;
+    padding-left: 5%;
+  }
+
+  .header__container-item {
+    margin: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 630px) {
+  .landing {
+    padding: 150px 5%;
   }
 }

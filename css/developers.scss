@@ -28,3 +28,22 @@
     }
   }
 }
+
+@media only screen and (max-width: 883px) {
+  .developers__container {
+    flex-direction: column !important;
+    .developers__section {
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      & > div {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+      }
+      & > h4, p {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -41,7 +41,27 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 30px;
-      color: #3e3e3e
+      color: #3e3e3e;
     }
   }
+}
+
+@media only screen and (max-width: 1352px) {
+  .features__container {
+    flex-direction: column !important;
+
+    & > div {
+      flex-direction: column;
+      margin: 50px 0;
+    }
+  }
+
+  .features__section__icon {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .features__section {
+    text-align: center;
+  }
+
 }
