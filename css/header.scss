@@ -1,4 +1,4 @@
-@import "global";
+@import "shared";
 
 .header {
   position: fixed;
@@ -77,7 +77,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(39, 146, 93);
+  background-color: $navigationBgColor;
   padding: 150px 30%;
   margin-top: 50px;
 

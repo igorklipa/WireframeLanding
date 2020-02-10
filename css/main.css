@@ -55,63 +55,6 @@ body {
     margin: 0 5%;
   }
 }
-* {
-  font-family: "Open Sans", sans-serif;
-}
-
-body {
-  margin: 0;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 0 15%;
-}
-
-.row-fluid {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 15%;
-}
-
-.flex-self-end {
-  display: flex;
-  align-self: flex-end;
-}
-
-.title__black, .title__white {
-  font-size: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin: 30px;
-}
-.title__white {
-  color: #ffffff;
-}
-
-.subtitle {
-  font-size: 20px;
-  font-weight: 600;
-  text-align: left;
-}
-
-.all-caps {
-  text-transform: uppercase;
-}
-
-@media only screen and (max-width: 978px) {
-  .row-fluid {
-    margin: 0 5%;
-  }
-
-  .row {
-    margin: 0 5%;
-  }
-}
 .header {
   position: fixed;
   top: 0;
@@ -178,7 +121,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #27925d;
+  background-color: #27925D;
   padding: 150px 30%;
   margin-top: 50px;
 }
@@ -284,101 +227,46 @@ body {
 .developers {
   margin: 50px 0;
 }
-.developers__section {
-  margin: 0 30px;
+
+.developer {
+  padding: 0 30px;
 }
-.developers__section-image {
+.developer__image {
   min-height: 280px;
   width: 200px;
   border-radius: 50%;
   background-color: #3e3e3e;
 }
-.developers__section-name {
+.developer__name {
   font-size: 20px;
   font-weight: 600;
 }
-.developers__section-position {
+.developer__position {
   font-style: italic;
   font-weight: 300;
 }
-.developers__section-bio {
+.developer__bio {
   line-height: 1.5em;
   font-weight: 300;
 }
 
 @media only screen and (max-width: 883px) {
-  .developers__container {
-    flex-direction: column !important;
+  .developers > .row-fluid {
+    flex-direction: column;
   }
-  .developers__container .developers__section {
+
+  .developer {
     margin: 20px 0;
     display: flex;
     flex-direction: column;
   }
-  .developers__container .developers__section > div {
+  .developer > div {
     display: flex;
     justify-content: center;
     align-self: center;
   }
-  .developers__container .developers__section > h4, .developers__container .developers__section p {
+  .developer > h4, .developer p {
     text-align: center;
-  }
-}
-* {
-  font-family: "Open Sans", sans-serif;
-}
-
-body {
-  margin: 0;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 0 15%;
-}
-
-.row-fluid {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 15%;
-}
-
-.flex-self-end {
-  display: flex;
-  align-self: flex-end;
-}
-
-.title__black, .title__white {
-  font-size: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin: 30px;
-}
-.title__white {
-  color: #ffffff;
-}
-
-.subtitle {
-  font-size: 20px;
-  font-weight: 600;
-  text-align: left;
-}
-
-.all-caps {
-  text-transform: uppercase;
-}
-
-@media only screen and (max-width: 978px) {
-  .row-fluid {
-    margin: 0 5%;
-  }
-
-  .row {
-    margin: 0 5%;
   }
 }
 .license {
@@ -422,63 +310,6 @@ body {
   .license__single, .license__multiple {
     width: 100%;
     padding: 50px 0;
-  }
-}
-* {
-  font-family: "Open Sans", sans-serif;
-}
-
-body {
-  margin: 0;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 0 15%;
-}
-
-.row-fluid {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 15%;
-}
-
-.flex-self-end {
-  display: flex;
-  align-self: flex-end;
-}
-
-.title__black, .title__white {
-  font-size: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin: 30px;
-}
-.title__white {
-  color: #ffffff;
-}
-
-.subtitle {
-  font-size: 20px;
-  font-weight: 600;
-  text-align: left;
-}
-
-.all-caps {
-  text-transform: uppercase;
-}
-
-@media only screen and (max-width: 978px) {
-  .row-fluid {
-    margin: 0 5%;
-  }
-
-  .row {
-    margin: 0 5%;
   }
 }
 .footer__about-section {

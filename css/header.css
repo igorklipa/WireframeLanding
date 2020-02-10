@@ -1,3 +1,5 @@
+@import "shared";
+
 .header {
   position: fixed;
   top: 0;
@@ -42,7 +44,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #27925d;
+  background-color: $navigationBgColor;
   padding: 150px 30%;
   margin-top: 50px;
 }
